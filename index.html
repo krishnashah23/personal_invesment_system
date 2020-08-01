@@ -1,23 +1,63 @@
 <html>
-	<head>
-		<title>Finance Easy</title>
-    </head>
-    <body>
-    	<div>
-            <nav>
-                Finance Easy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <a href="home.html">Home</a>&nbsp; &nbsp;
-                <a href="aboutus.html">About Us</a>&nbsp; &nbsp;
-                <a href="register.html">Join Now</a>&nbsp; &nbsp;
-                <a href="login.html"> Sign In</a>
-            </nav>
-            <section>
-    		<center>
-    			<br><br><br><br><img src="logo.png" height="150" width="150">
-    			<h1>Welcome  <h1>
-    			<h2><u> <i> One Step Solution for all your Finances</i> </u></h2>
-    		</center>
-            </section>
-    	</div>
-    </body>
+<head>
+<title>Finance Easy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<nav class="navbar">
+  <a href="home.html">Home</a>&nbsp; &nbsp;
+  <a href="aboutus.html" style="margin-right: 62.5em">About Us</a>
+  <a href="register.html">Join Now</a>&nbsp; &nbsp;
+  <a href="login.html"> Sign In</a>
+</nav>
+<br><br>
+<div class="main">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="index.png">
+</div>
+
+<div class="mySlides fade">
+   <img src="investment.png">
+</div>
+
+<div class="mySlides fade">
+  <img src="transaction.png">
+</div>
+<div class="mySlides fade">
+  <img src="networth.png">
+</div>
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+</body>
 </html> 
