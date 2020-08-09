@@ -63,3 +63,24 @@ header{
   text-decoration: none;
   font-size: 17px;
 }
+.thought_content
+{
+  position:absolute;
+  width:83.5%;
+  height:25px;
+  top: 705px;
+  left:250px;
+  background:#203f7d;
+  color: #fab549;
+}
+.thought
+{
+  position:absolute;
+  width:250px;
+  height:25px;
+  top: 705px;
+  background:#fab549;
+  text-align: center;
+  font-size: 19px;
+  color: #203f7d;
+}   

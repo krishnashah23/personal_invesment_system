@@ -2,55 +2,72 @@
 <html>
 <head>
 	<title>Registration</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<script type="text/javascript" src="register.js"></script>
 </head>
 <body>
-	<br><br>
+	<img src="logo.png" width="100" height="100">
+	<header>
+		<center>
+			<p><i>FINANCE EASY : One Step Solution For All Your Finances</i></p>
+		</center>
+	</header>
+	<div class="navbar">
+	  	<a href="home.html">Home</a>&nbsp; &nbsp;
+	  	<a href="aboutus.html" style="margin-right: 63.5em">About Us</a>
+	  	<a href="login.html">Sign In</a>
+	</div>
 <center>
-<form action="home.html" method="post">
-	<h2>Registration Form</h2>
-	<table border="1">
+<div class="box">
+<form method="post">
+	<b><i>Registration Form</i></b><br><br>
+	Required Fields,house number,lane,mob number,email_id,username password and re-pass.
+		add only numbers as mobile number, username only alphabets.
+	<table border="1" width="800">
 		<tr>
 			<td>
 			<b>Personal Details</b><br><br>
 			Title:
-			<select>
+			<select style="margin-right: 25em">
 				<option></option>
 				<option value="Mr">Mr</option>
 				<option value="Mrs">Mrs</option>
 			</select>
 			Name:
-			<input type="text" name="name">
+			<input type="text" name="name" id="name" required="true"><span id="name_err" style="color:red;font-size: 10px;"></span>
 			<br><br>Age 
-			<input type="number" name="age">
+			<input type="number" name="age" style="margin-right: 17em">
 			Date of Birth
 			<input type="Date" name="dob"></td>
 		</tr>
 		<tr>
 			<td colspan="2"><b>Address Details:</b><br><br>
-			Lane <input type="text" name="lane"><br><br>
+			House Number <input type="number" name="house_no" required="true" style="margin-right: 15em"> Lane<input type="text" name="lane" required="true"><br><br>
 			City <input type="text" name="city"><br><br>
-			State <input type="text" name="State"><br><br>
+			State <input type="text" name="State">
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<b>Contact Details:</b><br><br>
-				Mobile Number:<input type="text" name="mob"><br><br>
-				Email ID : <input type="text" name="email"><br><br>
+				Mobile Number:<input type="text" name="mob" id="mob" required="true"><span id="mob_err" style="color:red;font-size: 10px;"></span><br><br>
+				Email ID : <input type="email" name="email" id="email"><span id="mail_err" style="color:red;font-size: 10px;"></span>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
 				<b>Login Credentials:</b><br><br>
-				Username:<input type="text" name="user"><br><br>
-				Password: <input type="Password" name="pass"><br><br>
-				Re-Enter Password: <input type="Password" name="repass"><br><br>
+				Username:<input type="text" name="user" id="uname" required="true"><br><br><span id="uname_err" style="color:red;font-size: 10px;"></span>
+				Password: <input type="Password" name="pass" id="pass" required="true"><br><br>
+				Re-Enter Password: <input type="Password" name="repass" id="repass" required="true"><span id="pass_err" style="color:red;font-size: 10px;"></span>
 			</td>
 		</tr>
 
 	</table>
-	<br><br><button>Submit</button>
+	<input type="submit" value="Register" onclick="validate()">
 </form>
+</div>
 </center>
 </body>
 </html>
