@@ -7,3 +7,8 @@
 	background-color:whitesmoke;
 	border-radius: 10px;
 }
+body{
+	background-image: url("background.png");	
+	margin:0px;
+	font-family: Verdana, sans-serif;
+}

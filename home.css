@@ -1,86 +1,34 @@
-body{
-	background-image: url("background.png");	
-	margin:0px;
-	font-family: Verdana, sans-serif;
-}
-header{
-	margin-left: 2px;
-	width: 100%;
-	height: 50px;
-	overflow: hidden;
-  	background-color: #203f7d;
-  	position:fixed;
-  	display:inline-block;
-  	color: #fab549;
-}
-.navbar {
-  margin-left: 2px;
-  top:52px;
-  overflow: hidden;
-  background-color: #203f7d;
-  position:fixed;
-  display:inline-block;
-  width: 100%;
-}
+    body{
+      background background-image: url("background.png");
+    }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: black;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
 
-.navbar a {
-  float:left;
-  display: block;
-  color: #fab549;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  .container text-center img{
+    width:100px;
+    height: 100px;
+  }
+  
+.well{
+  background-color: cyan;
 }
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-.main {
-  padding:10px 0px;
-  margin-top:0px;
-}
-.sidebar{
- margin:0px;
-}
-
-.box
-{
-	width:700px;
-	height:500px;
-	margin:auto;
-	margin-top:80px;
-	background-color:whitesmoke;
-	border-radius: 10px;
-}
-.box a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.thought_content
-{
-  position:absolute;
-  width:83.5%;
-  height:25px;
-  top: 705px;
-  left:250px;
-  background:#203f7d;
-  color: #fab549;
-}
-.thought
-{
-  position:absolute;
-  width:250px;
-  height:25px;
-  top: 705px;
-  background:#fab549;
-  text-align: center;
-  font-size: 19px;
-  color: #203f7d;
-}   

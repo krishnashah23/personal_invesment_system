@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <script type="text/javascript" src="login.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us </a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+    <div class="col-sm-12 text-left"> 
+     <div class="box">
+            <center>
+                <img src="login.png">
+                <form id="login"  method="POST">
+                    <div class="heading"><b><i>Sign In</i></b></div><br><br>
+                    <input type='text' id="username" placeholder="Username"><br><br>
+                    <input type='password' id="password" placeholder="Password"><br><br>
+                    <button id="submit" name="submit" type="submit" onclick="validate()">Login</button>
+                    <br><br>
+                    <a href="new_password.html" >Forgot Password</a>
+                    <br><br><a href="register.html">New User</a> 
+                    <br><br> Enter username and password as User1 to validate 
+                </form>
+            </center>
+        </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -8,7 +8,7 @@ function validate()
 	var re_pass = document.getElementById('repass').value;
 
 	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	var filter1 = /^[0-9]+$/;
+	var filter1 = /^[0-9]+	$/;
 	var letters = /^[A-Za-z]+$/;
 	if(name == "" )
 		document.getElementById('name_err').innerHTML = "&nbsp;*Required"

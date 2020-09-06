@@ -5,7 +5,7 @@ function validate()
 	if ( username == "user1" && password == "user1")
 	{
 		alert ("Login successfully");
-		window.open("home.html");
+		window.open("home_1.html");
 		return false;
 	}
 	else
