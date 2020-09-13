@@ -2,13 +2,16 @@
 <html>
 <head>
 	<title>Registration</title>
-	<link rel="stylesheet" type="text/css" href="register.css">
+	<link rel="icon" href="logo.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="register.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   	<script type="text/javascript" src="login.js"></script>
-
+  	<style>
+  		.container{
+  			background-color:#ebebe0;
+  		}
+  	</style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -24,7 +27,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us </a></li>
+        <li><a href="contact.html">Contact Us </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
        	<li><a href="login_2.html">Sign In</a></li>
@@ -32,56 +35,71 @@
     </div>
   </div>
 </nav>
-<center>
-<div class="box">
-<form method="post">
-	<b><i>Registration Form</i></b><br><br>
+<div class="row slideanim">
+	<div class="col-sm-2"></div>
+	<div class="container col-sm-8">
+	<form method="post">
+	<div class="text-center"><h2><b><u>Registration Form</u></b></h2></div>
 	Required Fields,house number,lane,mob number,email_id,username password and re-pass.
 		add only numbers as mobile number, username only alphabets.
-	<table border="1" width="800">
+	<table border="1" width="100%">
 		<tr>
 			<td>
-			<b>Personal Details</b><br><br>
+			<div class="form-group">
+			<b>Personal Details</b><br>
 			Title:
 			<select style="margin-right: 25em">
 				<option></option>
 				<option value="Mr">Mr</option>
 				<option value="Mrs">Mrs</option>
-			</select>
+			</select><br>
 			Name:
-			<input type="text" name="name" id="name" required="true"><span id="name_err" style="color:red;font-size: 10px;"></span>
-			<br><br>Age 
-			<input type="number" name="age" style="margin-right: 17em">
+			<input type="text" class="form-control" name="name" id="name" required="true"><span id="name_err" style="color:red;font-size: 10px;"></span>
+			Age 
+			<input type="number" class="form-control" name="age" style="margin-right: 17em">
 			Date of Birth
-			<input type="Date" name="dob"></td>
+			<input type="Date"  class="form-control" name="dob"></td><br>
+		</div>
 		</tr>
 		<tr>
-			<td colspan="2"><b>Address Details:</b><br><br>
-			House Number <input type="number" name="house_no" required="true" style="margin-right: 15em"> Lane<input type="text" name="lane" required="true"><br><br>
-			City <input type="text" name="city"><br><br>
-			State <input type="text" name="State">
+			<div class="form-group">
+			<td colspan="2"><b>Address Details:</b><br>
+			House Number <input type="number" class="form-control" name="house_no" required="true" style="margin-right: 15em"> 
+			Lane<input type="text"  class="form-control" name="lane" required="true">
+			City <input type="text" class="form-control" name="city">
+			State <input type="text" class="form-control" name="State"><br>
 			</td>
+		</div>
 		</tr>
 		<tr>
+			<div class="form-group">
 			<td colspan="2">
-				<b>Contact Details:</b><br><br>
-				Mobile Number:<input type="text" name="mob" id="mob" required="true"><span id="mob_err" style="color:red;font-size: 10px;"></span><br><br>
-				Email ID : <input type="email" name="email" id="email"><span id="mail_err" style="color:red;font-size: 10px;"></span>
+				<b>Contact Details:</b><br>
+				Mobile Number:<input type="text" class="form-control" name="mob" id="mob" required="true">
+				<span id="mob_err" style="color:red;font-size: 10px;"></span>
+				Email ID : <input type="email" class="form-control" name="email" id="email">
+				<span id="mail_err" style="color:red;font-size: 10px;"></span><br>
 			</td>
+		</div>
 		</tr>
 		<tr>
+			<div class="form-group">
 			<td colspan="2">
-				<b>Login Credentials:</b><br><br>
-				Username:<input type="text" name="user" id="uname" required="true"><br><br><span id="uname_err" style="color:red;font-size: 10px;"></span>
-				Password: <input type="Password" name="pass" id="pass" required="true"><br><br>
-				Re-Enter Password: <input type="Password" name="repass" id="repass" required="true"><span id="pass_err" style="color:red;font-size: 10px;"></span>
+				<b>Login Credentials:</b><br>
+				Username:<input type="text" class="form-control" name="user" id="uname" required="true">
+				<span id="uname_err" style="color:red;font-size: 10px;"></span>
+				Password: <input type="Password" class="form-control" name="pass" id="pass" required="true">
+				Re-Enter Password: <input type="Password" class="form-control" name="repass" id="repass" required="true">
+				<span id="pass_err" style="color:red;font-size: 10px;"></span><br>
 			</td>
+		</div>
 		</tr>
 
 	</table>
-	<input type="submit" value="Register" onclick="validate()">
+	<center><br><input type="submit" class="btn btn-default" value="Register" onclick="validate()"></center>
 </form>
 </div>
-</center>
+<div class="col-sm-2"></div>
+</div>
 </body>
 </html>
