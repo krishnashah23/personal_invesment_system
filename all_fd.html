@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finance Easy</title>
+  <link rel="icon" href="logo.png" type="image/icon type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="nav-placeholder">
+  
+</div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+  </script>
+<div class="container">
+  <h2 class="text-center"><b><u>All Fixed Deposits</u></b></h2><br><br>
+  <input id="myInput" type="text"  class="form-control" placeholder="Search..">
+  <br><br>
+  <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>                                                                                 
+  <div class="table-responsive" style="font-size: 14px">          
+  <table class="table table-hover table-striped">
+    <thead>
+      <tr>
+        <th>Name of Company</th>
+        <th>Name of Deposit Holder</th>
+        <th>Customer No.</th>
+        <th>FD No.</th>
+        <th>FD Date</th>
+        <th>Maturity Date</th>
+        <th>FD Amount</th>
+        <th>Maturity Amount</th>
+        <th>Duration</th>
+        <th>Interest Dates</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>ICICI Bank Ltd</td>
+        <td>Sheila Patel</td>
+        <td>2134561</td>
+        <td>1234567890</td>
+        <td>12/07/15</td>
+        <td>12/07/23</td>
+        <td>100000</td>
+        <td>100000</td>
+        <td>96 M</td>
+        <td>Quaterly</td>
+      </tr>
+      <tr>
+        <td>HDFC Bank Ltd</td>
+        <td>Sheila Patel</td>
+        <td>1234567</td>
+        <td>9087654431</td>
+        <td>11/08/15</td>
+        <td>11/08/22</td>
+        <td>200000</td>
+        <td>220000</td>
+        <td>95 M</td>
+        <td>Quaterly</td>
+      </tr>
+      <tr>
+        <td>City Union Bank</td>
+        <td>Ram Patel</td>
+        <td>2134562</td>
+        <td>0002312456</td>
+        <td>12/09/15</td>
+        <td>7/06/18</td>
+        <td>56330</td>
+        <td>69041</td>
+        <td>1000 D</td>
+        <td>Cummalatively</td>
+      </tr>
+       <tr>
+        <td>City Union Bank</td>
+        <td>Nilesh Patel</td>
+        <td>2121589</td>
+        <td>000987654</td>
+        <td>12/09/15</td>
+        <td>7/06/18</td>
+        <td>56330</td>
+        <td>69041</td>
+        <td>1000 D</td>
+        <td>Cummalatively</td>
+      </tr>
+       <tr>
+        <td>ICICI Bank Pvt</td>
+        <td>Ram Patel</td>
+        <td>2121562</td>
+        <td>12321345678</td>
+        <td>12/02/16</td>
+        <td>12/02/26</td>
+        <td>1000000</td>
+        <td>1000000</td>
+        <td>96 M</td>
+        <td>Quaterly</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</body>
+</html>
